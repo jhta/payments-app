@@ -1,0 +1,39 @@
+{
+  "name": "payments",
+  "version": "0.1.0",
+  "private": true,
+  "devDependencies": {
+    "eslint-config-standard": "^11.0.0",
+    "eslint-config-standard-react": "^6.0.0",
+    "eslint-plugin-import": "^2.13.0",
+    "eslint-plugin-node": "^6.0.1",
+    "eslint-plugin-promise": "^3.8.0",
+    "eslint-plugin-react": "^7.10.0",
+    "eslint-plugin-standard": "^3.1.0",
+    "jest-expo": "~27.0.0",
+    "react-native-scripts": "1.14.0",
+    "react-test-renderer": "16.3.1"
+  },
+  "main": "./node_modules/react-native-scripts/build/bin/crna-entry.js",
+  "scripts": {
+    "start": "react-native-scripts start",
+    "eject": "react-native-scripts eject",
+    "android": "react-native-scripts android",
+    "ios": "react-native-scripts ios",
+    "test": "jest",
+    "lint": "DEBUG=true standard --verbose",
+    "lint:fix": "standard --fix"
+  },
+  "jest": {
+    "preset": "jest-expo"
+  },
+  "dependencies": {
+    "expo": "^27.0.1",
+    "native-base": "^2.7.1",
+    "prop-types": "^15.6.2",
+    "react": "16.3.1",
+    "react-native": "~0.55.2",
+    "react-navigation": "^2.11.2",
+    "standard": "^11.0.1"
+  }
+}
