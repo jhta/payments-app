@@ -9,7 +9,7 @@ export default class SwipeableListExample extends Component {
     this.ds = new ListView.DataSource({ rowHasChanged: (r1, r2) => r1 !== r2 })
     this.state = {
       basic: true,
-      listViewData: props.items 
+      listViewData: props.items
     }
   }
   deleteRow (secId, rowId, rowMap) {

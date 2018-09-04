@@ -5,12 +5,12 @@ import {
   Content
 } from 'native-base'
 
-const Layout = ({ children, navigation }) => (
+const Layout = ({ children, navigation, hideFooter }) => (
   <Container>
     <Content>
       { children }
     </Content>
-    <Footer navigation={navigation} />
+    { !hideFooter && <Footer navigation={navigation} /> }
   </Container>
 )
 

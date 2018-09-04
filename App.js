@@ -1,19 +1,9 @@
-import React from 'react'
 import Main from './src/views/Main'
 import Analytics from './src/views/Analytics'
 import Config from './src/views/Config'
 import SharedAccounts from './src/views/SharedAccounts'
+import Form from './src/views/Form'
 import { createStackNavigator } from 'react-navigation'
-
-
-class Home extends React.Component {
-  render () {
-    return (
-      <Main />
-    )
-  }
-}
-
 
 export default createStackNavigator({
   Home: {
@@ -40,5 +30,13 @@ export default createStackNavigator({
     navigationOptions: () => ({
       title: 'Shared Accounts'
     })
+  },
+  Form: {
+    screen: Form,
+    navigationOptions: () => ({
+      title: 'Add item' 
+    })
   }
+}, {
+  transitionConfig: () => ({ screenInterpolator: () => null })
 })
